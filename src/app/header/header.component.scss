@@ -1,0 +1,29 @@
+nav {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    padding: 1rem;
+    
+    h1 {
+        align-content: center;
+        border-bottom: 1px solid transparent;
+            &:hover {
+                border-bottom: 1px solid black;
+                cursor: pointer;
+            }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        li {
+            padding: 0.5rem;
+            border-bottom: 1px solid transparent;
+            &:hover {
+                border-bottom: 1px solid black;
+                cursor: pointer;
+            }
+        }
+    }
+}

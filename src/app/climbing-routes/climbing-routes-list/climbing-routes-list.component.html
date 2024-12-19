@@ -1,0 +1,13 @@
+<div class="route-grid-header">
+    <h2>My Routes</h2>
+    <a [routerLink]="['new']">+</a>
+    <hr>
+</div>
+<div class="route-grid">
+  <app-climbing-routes-item
+    *ngFor="let climbingRoute of climbingRoutes"
+    [climbingRoute]="climbingRoute"
+    routerLinkActive="active"
+    [routerLink]="[climbingRoute._id]"
+  ></app-climbing-routes-item>
+</div>

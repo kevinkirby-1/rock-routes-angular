@@ -1,0 +1,14 @@
+<div>
+    <h2>Route Name: {{ climbingRoute.name }}</h2>
+    <hr>
+    <img src="{{ climbingRoute.imageUrl }}" alt="">
+    <ul>
+        <li>Grade: {{ climbingRoute.grade }} </li>
+        <hr>
+        <li>Attempts: {{ climbingRoute.attempts }}</li>
+        <hr>
+        <li>Complete: {{ climbingRoute.complete }}</li>
+    </ul>
+    <a class="edit" [routerLink]="['edit']">Edit</a>
+    <a class="delete">Delete</a>
+</div>

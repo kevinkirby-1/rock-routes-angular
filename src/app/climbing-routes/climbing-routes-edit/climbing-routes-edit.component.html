@@ -1,0 +1,71 @@
+<div>
+    <h2>Edit Route</h2>
+    <hr>
+    <form id="climbing-route-edit" (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          [ngModel]="climbingRoute?.name"
+          #name="ngModel"
+        />
+
+        <label for="imageUrl">Image URL:</label>
+        <input
+          type="text"
+          id="imageUrl"
+          name="imageUrl"
+          [ngModel]="climbingRoute?.imageUrl"
+          #grade="ngModel"
+        />
+      
+        <label for="grade">Grade:</label>
+        <input
+          type="text"
+          id="grade"
+          name="grade"
+          [ngModel]="climbingRoute?.grade"
+          #grade="ngModel"
+        />
+      
+        <label for="attempts">Attempts:</label>
+        <input
+          type="text"
+          id="attempts"
+          name="attempts"
+          [ngModel]="climbingRoute?.attempts"
+          #grade="ngModel"
+        />
+      
+        <section>
+            <input
+            type="radio"
+            id="complete"
+            value="true"
+            name="complete"
+            [ngModel]="climbingRoute?.complete"
+            #complete="ngModel"
+          />
+          <label for="complete">Complete</label>
+        </section>
+      
+        <section>
+            <input
+            type="radio"
+            id="incomplete"
+            value="false"
+            name="complete"
+            [ngModel]="climbingRoute?.complete"
+            #complete="ngModel"
+          />
+          <label for="incomplete">Incomplete</label>
+        </section>
+
+        <section>
+            <button id="submit" type="submit">Save</button>
+            <button id="cancel" type="button" (click)="onCancel()">Cancel</button>
+        </section>
+      </form>
+      
+</div>
